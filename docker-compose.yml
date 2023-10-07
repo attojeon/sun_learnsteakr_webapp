@@ -6,7 +6,8 @@ services:
     image: popcat-wetherapp:latest
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile 
+    image: popcat-wetherapp:latest
     ports:
       - "10207:80"
     volumes:
