@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>팝캣</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function count(type)  {
+            // 결과를 표시할 element
+            const resultElement = document.getElementById('result');            
+            // 현재 화면에 표시된 값
+            let number = resultElement.innerText;
+            // 더하기/빼기
+            if(type === 'plus') {
+                number = parseInt(number) + 1;
+            }else if(type === 'minus')  {
+                number = parseInt(number) - 1;
+            }
+            
+            // 결과 출력
+            resultElement.innerText = number;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+    <h1>팝캣</h1>
+    <h4 id = "result">0</h4>
+    <img onclick='count("plus")' src="static/img/popcat.gif" alt="팝캣 아이콘" width="400">
+    
+    <p>클릭하면 점수가 올라갑니다.</p>
+    <p>점수를 올리는 자바스크립트 코드는 인터넷 검색으로 추가하였습니다.</p>
+
+    <a href="index.html">날씨</a>
+    </div>
+</body>
+</html>
